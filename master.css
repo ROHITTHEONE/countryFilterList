@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  font-family: 'tahoma';
+}
+
+.container{
+  width: 60%;
+  margin: 10% auto;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width:550px) {
+  .container{
+    width: 40%;
+  }
+}
+
+.container input{
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  font-size: 18px;
+  color: #ccc;
+  padding: 5px;
+  font-weight: lighter;
+}
+
+.suggestions{
+  display: none;
+}
+
+.suggestions.show {
+  display: block;
+}
+
+.suggestions > div{
+  padding : 0.5rem 1rem;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: 2px solid #666;
+  cursor: pointer;
+}
+
+.suggestions > div:first-of-type{
+  border-top: 2px solid #999;
+}
+
+.suggestions > div:last-of-type{
+  border-bottom: 0px;
+}
+
+.suggestions > div:hover,
+.suggestions > div.selected{
+  background-color: #00c;
+}
